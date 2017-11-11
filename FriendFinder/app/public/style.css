@@ -1,0 +1,41 @@
+.jumbotron {
+    background-color: #039be5;
+    color: #59ea59;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    border-bottom: 2px solid #7f7f7f;
+    margin: 5% !important;
+}
+
+.btn-lg {
+    width: 20%;
+    margin-top: 3%;
+}
+
+html {
+    margin: -1% 4% 3% 4%;
+}
+
+.page-header {
+    text-align: center;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+.choices {
+    width: 25%;
+}
+
+#submit {
+    width: 25%;
+}
+
+
+
+
+
+
