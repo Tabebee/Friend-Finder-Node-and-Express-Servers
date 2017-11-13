@@ -77,3 +77,4 @@ $(document).ready(function() {
         $("#q10").val("");
     }
 };
+});
