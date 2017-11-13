@@ -50,14 +50,17 @@ $(document).ready(function() {
                 $("#q10").val().substring(0,1)
             ]
         };
+        console.log(newUser.scores);
         post(newUser);
-    }   //  end main
+    };   //  end main
 
     function post(variable) {
         $.post("/api/friends", variable, function (data) {
-
+            $("#modalName").text(data.name);
+            $("#modalPhoto").attr('src', data.photo);
+            $(".modal").modal('toggle');
         clear();
-    };
+    });
 
     function clear() {
         $("#name").val("");
@@ -73,5 +76,4 @@ $(document).ready(function() {
         $("#q9").val("");
         $("#q10").val("");
     }
-
-});
+};
