@@ -7,7 +7,8 @@ $(document).ready(function() {
         if (checkValid() === true) {
             main();
         } else {
-            alert("Please fill out the entire form before submitting")
+            alert("Please fill out the entire form before submitting");
+
         }
     });
 
@@ -37,16 +38,16 @@ $(document).ready(function() {
             "name": $("#name").val().trim(),
             "photo": $("#photoImg").val().trim(),
             "scores": [
-                $("#q1").val().trim(),
-                $("#q2").val().trim(),
-                $("#q3").val().trim(),
-                $("#q4").val().trim(),
-                $("#q5").val().trim(),
-                $("#q6").val().trim(),
-                $("#q7").val().trim(),
-                $("#q8").val().trim(),
-                $("#q9").val().trim(),
-                $("#q10").val().trim()
+                $("#q1").val().substring(0,1),
+                $("#q2").val().substring(0,1),
+                $("#q3").val().substring(0,1),
+                $("#q4").val().substring(0,1),
+                $("#q5").val().substring(0,1),
+                $("#q6").val().substring(0,1),
+                $("#q7").val().substring(0,1),
+                $("#q8").val().substring(0,1),
+                $("#q9").val().substring(0,1),
+                $("#q10").val().substring(0,1)
             ]
         };
         post(newUser);
@@ -55,11 +56,8 @@ $(document).ready(function() {
     function post(variable) {
         $.post("/api/friends", variable, function (data) {
 
-        });
-
-
         clear();
-    }
+    };
 
     function clear() {
         $("#name").val("");
@@ -75,6 +73,5 @@ $(document).ready(function() {
         $("#q9").val("");
         $("#q10").val("");
     }
-
 
 });

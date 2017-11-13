@@ -31,9 +31,13 @@ hr {
 }
 
 #submit {
-    width: 25%;
+    width: 100%;
 }
-
+/*  MODAL  */
+#modalPhoto {
+    height: 300px;
+    width: 300px;
+}
 
 
 
