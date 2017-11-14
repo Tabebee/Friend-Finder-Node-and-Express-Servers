@@ -42,7 +42,7 @@ hr {
 }
 
 #body {
-    background-color: #039be5;
+    background-color: #004444;
     color: #59ea59;
 }
 
@@ -59,3 +59,7 @@ hr {
     display: inline;
 }
 
+.home {
+    background-color: #004444;
+    margin-top: 10%;
+}
