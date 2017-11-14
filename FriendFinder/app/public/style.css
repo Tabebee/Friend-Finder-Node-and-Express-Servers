@@ -27,11 +27,13 @@ hr {
 }
 
 .choices {
-    width: 25%;
+    width: 45%;
 }
 
 #submit {
     width: 100%;
+    color: #000000;
+    font-size: 25px;
 }
 /*  MODAL  */
 #modalPhoto {
@@ -39,7 +41,21 @@ hr {
     width: 300px;
 }
 
+#body {
+    background-color: #039be5;
+    color: #59ea59;
+}
 
+#apiLink {
+    color: #59ea59;
+}
 
+#centerThis {
+    text-align: center;
+}
 
+.form-control {
+    text-align: center;
+    display: inline;
+}
 
